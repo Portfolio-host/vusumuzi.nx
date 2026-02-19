@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Portfolio Page</title>
+    <meta property="og:title" content="Portfolio Page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}pre {  white-space: normal;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Arial;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.55;
+        color: var(--dl-color-gray-black);
+        background: var(--dl-color-gray-palette);
+
+        fill: var(--dl-color-gray-black);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container10">
+        <div class="home-container11">
+          <div class="home-container12"></div>
+          <div class="home-container13">
+            <div class="home-container14">
+              <div class="home-container15">
+                <span class="home-thq-link-elm1">NXELE VUSUMUZI PORTFOLIO</span>
+              </div>
+              <div class="home-container16">
+                <a href="index.html" class="home-thq-question-elm1">Home</a>
+                <a href="#Education" class="home-thq-link-elm2">Education</a>
+                <a href="#Experience" class="home-thq-link-elm3">Experience</a>
+                <a href="#Contact" class="home-thq-link-elm4">Contact</a>
+                <a href="#About" class="home-thq-link-elm5">About</a>
+              </div>
+            </div>
+          </div>
+          <div class="home-thq-hero-elm">
+            <div id="Home" class="home-thq-hero-text-container-elm">
+              <h1 class="home-thq-heading-elm1">
+                <span class="Section-Heading">SECURITY</span>
+                <span class="home-text101">PROFESSIONAL</span>
+                <span class="Section-Heading">&nbsp;</span>
+              </h1>
+              <span class="home-thq-text-elm1">
+                <span>
+                  With over three years of of dedicated security experience,
+                </span>
+                <br />
+                <span>
+                  I currently serve as a Control Room Operator focusing on
+                  High-level Cctv Monitoring.
+                </span>
+                <br />
+                <span>
+                  My Professional foundation is Built on a Proactive approach to
+                  Saftey and Commitment to Continuous learning.
+                </span>
+              </span>
+              <a
+                href="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/10a3a82c-783c-4a23-afc4-fa2dfdd70392/0f0a2dff-3d0d-426d-a0c9-5e10ccc7fa77"
+                id="CV"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link1 button"
+              >
+                Download cv
+              </a>
+            </div>
+            <div class="home-container17"></div>
+          </div>
+        </div>
+        <div class="home-thq-features-elm">
+          <div class="home-thq-heading-container-elm1">
+            <h2 class="home-text108 Section-Heading">
+              Professional Development
+            </h2>
+            <span class="home-text109">
+              With a Career built in Vigilance, I bridge a gap between physical
+              security and digital efficiency. I specialize in Security
+              Execution and Control Room Operations, Seemlessly Integrating
+              Occupational Health Safety (OHS) to ensure a protected and
+              Compliant Environment.
+            </span>
+          </div>
+          <div class="home-thq-cards-container-elm">
+            <div class="home-thq-card-elm1">
+              <div class="home-thq-icon-container-elm1">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="home-icon10"
+                >
+                  <path
+                    d="M21 11c0 5.55-3.84 10.74-9 12c-5.16-1.26-9-6.45-9-12V5l9-4l9 4zm-9 10c3.75-1 7-5.46 7-9.78V6.3l-7-3.12L5 6.3v4.92C5 15.54 8.25 20 12 21M11 7h2v6h-2zm0 8h2v2h-2z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </div>
+              <div class="home-thq-content-container-elm1">
+                <span class="home-thq-heading-elm2 Card-Heading">Security</span>
+                <span class="home-text110">
+                  I have Successfully tansitioned from On-Site security roles to
+                  Control Room Operations. I am able to identify threats, Manage
+                  Incidents and ensure a seemless link between Observation and
+                  Response.
+                </span>
+              </div>
+            </div>
+            <div class="home-thq-card-elm2">
+              <div class="home-thq-icon-container-elm2">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="home-icon12"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M16.045 10.45v1.797a.45.45 0 0 1-.45.45h-2.247v2.247a.45.45 0 0 1-.45.45h-1.797a.45.45 0 0 1-.45-.45v-2.247H8.406a.45.45 0 0 1-.45-.45V10.45a.45.45 0 0 1 .45-.45h2.247V7.753a.45.45 0 0 1 .45-.449H12.9a.45.45 0 0 1 .45.45V10h2.246a.45.45 0 0 1 .45.45"
+                    ></path>
+                    <path
+                      d="M20.672 11.89V6.61a1.93 1.93 0 0 0-1.32-1.831L14.438 3.14a7.8 7.8 0 0 0-4.876 0L4.648 4.778a1.93 1.93 0 0 0-1.32 1.83v5.28a7.71 7.71 0 0 0 3.603 6.524l4.048 2.544a1.93 1.93 0 0 0 2.042 0l4.047-2.544a7.71 7.71 0 0 0 3.604-6.523"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="home-thq-content-container-elm2">
+                <span class="home-thq-heading-elm3">
+                  Occupational Health and Safety
+                </span>
+                <span class="home-text111">
+                  I ensure that while protecting Assets and people, The security
+                  team is shielded from workplace hazards. This proactive
+                  approach reduces workplace incidents, Ensures Emergency
+                  response paths are clear, And maintains a safe High-Standard
+                  environment.
+                </span>
+              </div>
+            </div>
+            <div class="home-thq-card-elm3">
+              <div class="home-thq-icon-container-elm3">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="home-icon16"
+                >
+                  <path
+                    d="M2 5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2h-7v2h3a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2h3v-2H4a2 2 0 0 1-2-2zm18 11V5H4v11z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </div>
+              <div class="home-thq-content-container-elm3">
+                <span class="home-thq-heading-elm4 Card-Heading">
+                  Computer Leteracy
+                </span>
+                <span class="home-text112">
+                  My Technical expertise allows me to manage complex
+                  surveillance systems. This extends to Professional Report
+                  Writting. "(eg: Documenting Security Logs, Incidents Reports)"
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-thq-about-elm">
+          <div class="home-thq-max-content-width-container-elm">
+            <div class="home-thq-heading-container-elm2">
+              <h1 id="Experience" class="home-text113 Section-Heading">
+                Professional experience
+              </h1>
+            </div>
+            <div class="home-thq-content-container-elm4">
+              <div class="home-thq-about1-elm1">
+                <div class="home-container18">
+                  <span class="home-thq-text-elm2">
+                    Control Room Operator | Blueprint Security | 2025
+                  </span>
+                </div>
+                <span class="home-text114">
+                  <span class="home-text115">Proactive&nbsp;Surveilance :</span>
+                  <span class="home-text116">
+                    Monitor multi-screen CCTV feeds to identify&nbsp;security
+                    breachs and Safety hazards, ensuring a&nbsp;secure
+                    environment.
+                  </span>
+                  <br class="home-text117" />
+                  <span class="home-text118">Safety Compliance :</span>
+                  <span class="home-text119">
+                    Apply (OHS)&nbsp;Standards to identify potential workplace
+                    Risks.
+                  </span>
+                  <br class="home-text120" />
+                  <span class="home-text121">Emergency Dispatch :</span>
+                  <span class="home-text122">
+                    Lead the co-ordination of emergency protocol, during
+                    incidents.
+                  </span>
+                  <br class="home-text123" />
+                  <span class="home-text124">Detailed Documentation :</span>
+                  <span class="home-text125">
+                    Maintain incidents logs and&nbsp;Safety reports, ensuring
+                    all is compliant with Company Policy.
+                  </span>
+                  <br class="home-text126" />
+                </span>
+              </div>
+            </div>
+            <div class="home-thq-about1-elm2">
+              <div class="home-container19">
+                <span class="home-thq-text-elm3">
+                  <span>Security Officer | White Leopard</span>
+                  <span>Security</span>
+                  <span>| 2022 - 2025</span>
+                </span>
+              </div>
+              <span class="home-text130">
+                <span class="home-text131">Access Control :</span>
+                <span class="home-text132">
+                  &nbsp;Managed entry and exit point
+                </span>
+                <span>
+                  s for pesonnel and visitors, utilizing physical logging and
+                  physical Verification.
+                </span>
+                <br class="home-text134" />
+                <span class="home-text135">Conflict Resolution :</span>
+                <span class="home-text136">De-e</span>
+                <span>
+                  scalated high-preasure situations through effective
+                  communication and adherence to&nbsp;Safety guidelines
+                </span>
+                <span class="home-text138">.</span>
+                <br class="home-text139" />
+                <span class="home-text140">Asset Protection :</span>
+                <span class="home-text141">&nbsp;Conducted regular patrol</span>
+                <span>
+                  s and inspections to mitigate the risk of theft, vandalism,
+                  or&nbsp;Safety hazards
+                </span>
+                <span class="home-text143">.</span>
+                <br class="home-text144" />
+                <span class="home-text145">Collaboration :</span>
+                <span class="home-text146">&nbsp;Worked clo</span>
+                <span>
+                  sely with th team to maintain a secure environment for (
+                  corporate office, Gov facilities, High-Value Equipment
+                </span>
+                <span class="home-text148">.</span>
+                <br class="home-text149" />
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="home-thq-section-separator-elm1"></div>
+        <div class="home-thq-clients-elm">
+          <div class="home-thq-heading-container-elm3">
+            <h1 id="Education" class="home-text150 Section-Heading">
+              Education and Accreditations
+            </h1>
+            <span class="home-text151 Section-Text">
+              A diverse Collection of Certifications and Academic Achievements.
+            </span>
+          </div>
+          <div class="home-thq-logo-container-elm">
+            <logo-wrapper class="logo-wrapper">
+              <!--Logo component-->
+              <div class="logo-container"></div>
+            </logo-wrapper>
+            <svg
+              width="512"
+              height="512"
+              viewBox="0 0 512 512"
+              class="home-icon18"
+            >
+              <path
+                d="M414.531 341.538v.003c0 50.556-68.509 91.541-153.02 91.541c-73.06 0-134.142-30.634-149.357-71.599l-6.635-1.594v-11.492l-2.972-1.334c-6.771-3.038-6.771-8.01 0-11.048l2.972-1.334V232.763l92.177 25.56c19.424-5.34 41.036-8.322 63.815-8.322c24.188 0 47.059 3.362 67.395 9.34l85.625-20.578z"
+                fill="#132028"
+              ></path>
+              <path
+                d="m122.592 389.093l5.153 56.089c.977 10.633-6.851 20.045-17.485 21.022s-20.045-6.851-21.022-17.485a20.6 20.6 0 0 1 0-3.538l5.153-56.089c.715-7.788 7.608-13.521 15.396-12.805c6.908.635 12.198 6.137 12.805 12.806"
+                fill="#FFB636"
+              ></path>
+              <path
+                d="M236.306 345.585L10.521 220.269c-10.831-6.012-10.831-15.849 0-21.861L236.306 73.093c10.831-6.012 28.556-6.012 39.387 0l225.785 125.316c10.831 6.012 10.831 15.849 0 21.861L275.694 345.585c-10.832 6.012-28.556 6.012-39.388 0"
+                fill="#464A4C"
+              ></path>
+              <path
+                d="M108.492 395.822c-16.022 0-29.011-12.989-29.011-29.012v-7.503c0-16.022 12.989-29.012 29.011-29.012s29.011 12.989 29.011 29.012v7.503c0 16.023-12.989 29.012-29.011 29.012"
+                fill="#FFD592"
+              ></path>
+              <path
+                d="M108.492 368.861c-8.332 0-15.086-6.754-15.086-15.086v-68.631c0-5.361 2.846-10.32 7.475-13.025l147.508-86.194c7.194-4.203 16.433-1.779 20.637 5.415c4.203 7.193 1.779 16.433-5.414 20.636l-140.034 81.826v59.974c0 8.331-6.755 15.085-15.086 15.085"
+                fill="#FFB636"
+              ></path>
+              <path
+                d="M290.332 198.95c0 13.307-15.371 24.094-34.332 24.094s-34.332-10.787-34.332-24.094s15.371-24.094 34.332-24.094s34.332 10.787 34.332 24.094"
+                fill="#132028"
+              ></path>
+            </svg>
+          </div>
+          <span class="home-thq-heading-elm5">
+            <span>Safety And Security&nbsp;</span>
+            <span>Qualifications</span>
+          </span>
+          <span class="home-text154">
+            <span>Occupational Health &amp; Safety (OHS) | Educourse</span>
+            <br />
+            <span>CCTV Operator | Allison</span>
+            <br />
+            <span>
+              Security ( Grade E | Drade D | Grade C | Alcohol screening | Excel
+              Training Centre
+            </span>
+            <br />
+            <span>Psira Registered</span>
+            <br />
+            <span>
+              National Senior Certificate ( Grade 12 ) | Ngcedomhlophe High
+              School
+            </span>
+            <br />
+            <br />
+          </span>
+          <span class="home-thq-heading-elm6">
+            Digital And Technical Qualifications
+          </span>
+          <span class="home-text166">
+            <span>Cyber Security Certificate | Allison</span>
+            <br />
+            <span>Digital Marketing Certificate | Educourse</span>
+            <br />
+            <span>Basic Computer Literacy | Educourse</span>
+            <br />
+          </span>
+        </div>
+        <div class="home-thq-pricing-elm">
+          <div class="home-thq-heading-container-elm4">
+            <h1 id="About" class="home-text173 Section-Heading">About</h1>
+            <span class="home-text174">
+              <span>
+                A security and safety specialist bridging the gap between
+                physical asset protection and digital intelligence.
+              </span>
+              <span>I am dedicated to safeguarding environments</span>
+              <span>through</span>
+              <span>vigilance, technology, and strategic risk management.</span>
+              <span>
+                My background includes securing high-value environments such as
+                mining operations and government sites, where I developed a
+                reputation for reliability, strict adherence to protocol, and
+                the ability to remain calm under pressure.​Beyond physical
+                security, I am deeply committed to digital advancement and
+                technical proficiency.
+              </span>
+              <span>
+                I have expanded my expertise into the digital realm with a
+                Certificate in Cyber Security and certifications in Digital
+                Marketing and Computer Literacy.
+              </span>
+              <span>
+                This unique combination of physical asset protection and digital
+                knowledge allows me to approach safety and security from a
+                modern, tech-savvy perspective, ensuring comprehensive
+                protection for both physical and digital assets.
+              </span>
+            </span>
+          </div>
+        </div>
+        <div class="home-thq-section-separator-elm2"></div>
+        <div class="home-thq-faqs-elm">
+          <h2 class="home-text182 Section-Heading">
+            Key Strength &amp; Professional Impact
+          </h2>
+          <div class="home-thq-content-container-elm5">
+            <div class="home-thq-faq-elm1">
+              <div class="home-thq-question-container-elm1">
+                <span class="home-thq-question-elm2">Core Competencies</span>
+              </div>
+              <div class="home-thq-answer-container-elm1">
+                <span class="home-thq-answer-elm1">
+                  <span class="home-text183 Card-Text">
+                    Surveilance Excellence :
+                  </span>
+                  <span class="home-text184 Card-Text">
+                    Proactive monitoring and incidents detection.
+                  </span>
+                  <br class="Card-Text" />
+                  <span class="home-text186 Card-Text">Risk Mitigation :</span>
+                  <span class="home-text187 Card-Text">
+                    Identifying hazards before they become accidents.
+                  </span>
+                  <br class="Card-Text" />
+                  <span class="home-text189 Card-Text">
+                    Emergency Co-ordination :
+                  </span>
+                  <span class="home-text190 Card-Text">
+                    Calm and effective communication under pressure.
+                  </span>
+                  <br class="Card-Text" />
+                  <span class="home-text192 Card-Text">
+                    Regulatory Compliance :
+                  </span>
+                  <span class="home-text193 Card-Text">
+                    Expert Knowledge of PSIRA and OHS Standards.
+                  </span>
+                  <br />
+                </span>
+              </div>
+            </div>
+            <div class="home-thq-faq-elm2">
+              <div class="home-thq-question-container-elm2">
+                <span class="home-thq-question-elm3">Career Highlights</span>
+              </div>
+              <div class="home-thq-answer-container-elm2">
+                <span class="home-thq-answer-elm2">
+                  <span class="home-text195">Safety Records :</span>
+                  <span class="Card-Text">
+                    Maintained a 100% incident-reporting accuracy rate across
+                    high-risk Government sites.
+                  </span>
+                  <br class="Card-Text" />
+                  <span class="home-text198">Repid Response :</span>
+                  <span class="Card-Text">
+                    Successfully co-ordinated emergency service during a "theft
+                    Attempt" with zero asset loss.
+                  </span>
+                  <br class="Card-Text" />
+                  <span class="home-text201">Digital Growth :</span>
+                  <span class="Card-Text">
+                    Self-tought in Cyber Security and Digital Marketing,
+                    completing 5+ professional certificates
+                  </span>
+                  <br class="Card-Text" />
+                  <span class="Card-Text">
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;while working
+                    full-time.
+                  </span>
+                  Here you would give the answer. Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit. Integer nec odio. Praesent
+                  libero. Sed cursus ante dapibus diam.c Sed nisi. Nulla quis
+                  sem at nibh elementum imperdiet.
+                </span>
+              </div>
+            </div>
+            <div class="home-thq-faq-elm3">
+              <div class="home-thq-question-container-elm3">
+                <span class="home-thq-question-elm4">
+                  Professional Philosophy
+                </span>
+              </div>
+              <div class="home-thq-answer-container-elm3">
+                <span class="home-thq-answer-elm3">
+                  <span>
+                    "Security is far more than surveilance; It is the proactive
+                    anticipation of risk.
+                  </span>
+                  <br />
+                  <span>
+                    My mission is to intergrate advanced monitoring with
+                    uncompromising OHS standards to ensure that every asset is
+                    protected and every individual returns home Safely"
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-thq-section-separator-elm3"></div>
+        <div class="home-thq-subscribe-elm">
+          <div class="home-container20">
+            <div class="home-thq-heading-container-elm5">
+              <h1 id="Contact" class="home-text208">Get In Touch</h1>
+              <span class="home-text209">
+                <span>
+                  I am always open to discussing new opportunities,security
+                  projects, or safety collaborations.
+                </span>
+                <br />
+                <span>Feel free to reach out—I’d love to hear from you!!!</span>
+              </span>
+            </div>
+            <a
+              href="tel:+27 73 751 0808"
+              id="Contact"
+              class="home-link2 button"
+            >
+              Contact Me
+            </a>
+            <div class="home-container21"></div>
+            <div class="home-container22">
+              <div class="home-container23">
+                <a
+                  href="mailto:vusumuzi.nx@outlook.com?subject=We`ll be happy to work with you."
+                  class="home-link3"
+                >
+                  <svg
+                    width="250"
+                    height="240"
+                    viewBox="0 0 256 256"
+                    class="home-icon25"
+                  >
+                    <g fill="none">
+                      <rect
+                        rx="60"
+                        fill="#242938"
+                        width="256"
+                        height="256"
+                      ></rect>
+                      <path
+                        d="M41.636 203.028h31.818v-77.273L28 91.665v97.727c0 7.545 6.114 13.636 13.636 13.636"
+                        fill="#4285F4"
+                      ></path>
+                      <path
+                        d="M182.545 203.028h31.819c7.545 0 13.636-6.113 13.636-13.636V91.665l-45.455 34.09"
+                        fill="#34A853"
+                      ></path>
+                      <path
+                        d="M182.545 66.664v59.091L228 91.665V73.481c0-16.863-19.25-26.477-32.727-16.363"
+                        fill="#FBBC04"
+                      ></path>
+                      <path
+                        d="M73.455 125.755v-59.09L128 107.574l54.545-40.91v59.091L128 166.665"
+                        fill="#EA4335"
+                      ></path>
+                      <path
+                        d="M28 73.483v18.181l45.454 34.091v-59.09l-12.727-9.546C47.227 47.005 28 56.619 28 73.483"
+                        fill="#C5221F"
+                      ></path>
+                    </g>
+                  </svg>
+                </a>
+                <a
+                  href="https://storage.googleapis.com/playground-bucket-v2.teleporthq.io/10a3a82c-783c-4a23-afc4-fa2dfdd70392/0f0a2dff-3d0d-426d-a0c9-5e10ccc7fa77"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="home-link4"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    class="home-icon33"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
+                      <path
+                        d="M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2"
+                      ></path>
+                      <path
+                        d="M11 12.5a1.5 1.5 0 0 0-3 0v3a1.5 1.5 0 0 0 3 0m2-4.5l1.5 6l1.5-6"
+                      ></path>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+              <a
+                href="https://www.linkedin.com/in/vusumuzi-nx"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link5"
+              >
+                <svg
+                  width="120"
+                  height="120"
+                  viewBox="0 0 128 128"
+                  class="home-icon38"
+                >
+                  <path
+                    d="M116 3H12a8.91 8.91 0 0 0-9 8.8v104.42a8.91 8.91 0 0 0 9 8.78h104a8.93 8.93 0 0 0 9-8.81V11.77A8.93 8.93 0 0 0 116 3z"
+                    fill="#0076b2"
+                  ></path>
+                  <path
+                    d="M21.06 48.73h18.11V107H21.06zm9.06-29a10.5 10.5 0 1 1-10.5 10.49a10.5 10.5 0 0 1 10.5-10.49m20.41 29h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75v32H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53z"
+                    fill="#fff"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <span class="home-thq-link-elm6">
+            <span>Copyright by Nxele Vusumuzi&nbsp;</span>
+            <span class="Anchor">&nbsp; &nbsp;@&nbsp; &nbsp;2026</span>
+          </span>
+        </div>
+        <a href="https://play.teleporthq.io/signup" class="home-link6">
+          <div aria-label="Sign up to TeleportHQ" class="home-container24">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 19 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="home-icon41"
+            >
+              <path
+                d="M9.1017 4.64355H2.17867C0.711684 4.64355 -0.477539 5.79975 -0.477539 7.22599V13.9567C-0.477539 15.3829 0.711684 16.5391 2.17867 16.5391H9.1017C10.5687 16.5391 11.7579 15.3829 11.7579 13.9567V7.22599C11.7579 5.79975 10.5687 4.64355 9.1017 4.64355Z"
+                fill="#B23ADE"
+              ></path>
+              <path
+                d="M10.9733 12.7878C14.4208 12.7878 17.2156 10.0706 17.2156 6.71886C17.2156 3.3671 14.4208 0.649963 10.9733 0.649963C7.52573 0.649963 4.73096 3.3671 4.73096 6.71886C4.73096 10.0706 7.52573 12.7878 10.9733 12.7878Z"
+                fill="#FF5C5C"
+              ></path>
+              <path
+                d="M17.7373 13.3654C19.1497 14.1588 19.1497 15.4634 17.7373 16.2493L10.0865 20.5387C8.67402 21.332 7.51855 20.6836 7.51855 19.0968V10.5141C7.51855 8.92916 8.67402 8.2807 10.0865 9.07221L17.7373 13.3654Z"
+                fill="#2874DE"
+              ></path>
+            </svg>
+            <span class="home-text215">Built in TeleportHQ</span>
+          </div>
+        </a>
+      </div>
+      <link
+        rel="canonical"
+        href="https://portfolio-page-aojpba.teleporthq.app/"
+      />
+    </div>
+    <script
+      defer=""
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>
